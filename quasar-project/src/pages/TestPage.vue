@@ -4,6 +4,15 @@
       <q-card-section>
         <div v-text="Naslov"></div>
         <div v-text="Autor"></div>
+        <p><a :href="link" target="_blank"></a>VeleRi</p>
+        <q-btn
+  flat
+  label="Otvori"
+  type="a"
+  :href="link"
+  target="_blank"
+/>
+
       </q-card-section>
       <q-card-section>
         {{ poziv }}
@@ -20,5 +29,7 @@
 const Naslov = 'Studij Informatike'
 const Autor = 'Tomislav Bijelic-Curkic'
 const poziv = 'VeleRi'
+const link = 'https://www.veleri.hr'
+
 
 </script>
